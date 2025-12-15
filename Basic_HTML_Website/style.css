@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Google Sans", sans-serif;
+}
+.site-header {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.header-left p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.header-left img {
+  width: 50px;
+  height: 50px;
+}
+.header-nav .nav-item {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+.nav-item:hover {
+  border-bottom-color: currentColor;
+}
+.title-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  border-bottom: 1px solid black;
+}
+.title-main .title {
+  padding: 5px;
+  font-size: 3em;
+}
+.title-main .subtitle {
+  color: rgba(81, 81, 81, 0.6);
+}
+.section-main {
+  display: flex;
+  flex-direction: row;
+}
+.projects {
+  padding: 30px;
+  width: calc((100% / 12) * 3);
+
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.projects h2 {
+  padding-bottom: 10px;
+  font-size: 2em;
+}
+.project-list {
+  list-style: none;
+}
+.project-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: calc((100% / 12) * 4.5);
+  justify-content: flex-start;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.middle > div {
+  flex: 1;
+}
+
+.middle .title {
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+.middle a,
+.middle p {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.middle a {
+  text-decoration: none;
+  color: black;
+}
+.middle .profile {
+  color: rgb(101, 175, 235);
+}
+.work-experience {
+  border-bottom: 1px solid black;
+}
+.openSource-work .title {
+  padding-top: 30px;
+}
+.right {
+  width: calc((100% / 12) * 4.5);
+  padding: 30px;
+  border-bottom: 1px solid black;
+}
+.right .title {
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+.right p,
+.right ul {
+  font-size: 20px;
+}
+.right p {
+  padding-bottom: 10px;
+}
+.right ul {
+  list-style: none;
+}
+.right ul li::before {
+  content: "-";
+  padding-right: 5px;
+}
+.right li {
+  padding: 5px 0;
+}
+.reviews {
+  padding: 30px;
+}
+.reviews h2 {
+  font-size: 2em;
+}
+.review-list {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0;
+  justify-content: space-evenly;
+}
+.review-card {
+  width: calc((100% / 12) * 2);
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+.review-card #pick {
+  color: rgba(95, 116, 2, 0.786);
+}
+footer p {
+  text-align: center;
+  font-size: 25px;
+  padding: 100px 0 30px 0;
+}
